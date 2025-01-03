@@ -21,6 +21,4 @@ SMODS.Atlas{
 --Load files
 assert(SMODS.load_file("objects/sounds.lua"))()
 assert(SMODS.load_file("objects/gears.lua"))()
-assert(SMODS.load_file("objects/places.lua"))()
-assert(SMODS.load_file("objects/redcliff.lua"))()
 assert(SMODS.load_file("objects/boosters.lua"))()
