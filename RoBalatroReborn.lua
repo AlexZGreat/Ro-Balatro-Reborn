@@ -7,7 +7,7 @@
 --- PRIORITY: -200
 --- BADGE_COLOR: fd5f55
 --- PREFIX: roblr
---- VERSION: 1.0
+--- VERSION: 0.1
 --- LOADER_VERSION_GEQ: 1.0.0
 
 --Mod icon
