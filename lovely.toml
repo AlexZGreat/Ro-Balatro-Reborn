@@ -11,20 +11,3 @@ pattern = "{card_limit = self.GAME.starting_params.consumable_slots, type = 'jok
 position = "at"
 payload = "{card_limit = self.GAME.starting_params.consumable_slots, type = 'joker', highlight_limit = 1e100})"
 match_indent = true
-
-# Remove use and sell buttons on pplaces
-[[patches]]
-[patches.pattern]
-target = "card.lua"
-pattern = "if self.highlighted and self.area and self.area.config.type ~= 'shop' then"
-position = "at"
-payload = "if self.highlighted and self.area and self.area.config.type ~= 'shop' and self.ability.set ~= 'place' then"
-match_indent = true
-
-[[patches]]
-[patches.pattern]
-target = "card.lua"
-pattern = "elseif self.children.use_button then"
-position = "at"
-payload = "elseif self.children.use_button and self.ability.set ~= 'place' then"
-match_indent = true
